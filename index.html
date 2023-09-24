@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Devs Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
+<style>
+</style>
+</head>
+
+<body style="background-color:black">
+<section class="header">
+    <nav>
+     <h2 >MV</h2>
+     <div class ="nav-links" id="navLinks">
+     <ul>
+        <li> <a href="https://drive.google.com/file/d/1xl6f_LG8Ms8PT-d57ZXgPoEaFxsi-U5J/view?usp=sharing">RESUME</a></li>
+        <li> <a href="https://github.com/mahimavarma"><img src="Picture2.png" alt=""></a></li>
+        <li> <a href="https://www.linkedin.com/in/mahima-varma-5a4171249/"><img src="Picture3.png" alt=""></a></li>
+     </ul>
+    </div>
+</nav>
+<div class="text-box">
+    <div class="container">
+        <h1>I create <a class="auto-type"></a><br> experiences</h1> 
+    </div>
+        <img src="Picture1.png" alt="" class="center"> 
+    <h4 class="color">Mahima Varma/Software Developer</h4>
+    <h5>Projects <br><img src="Picture4.png" alt="" class="arrow"></h5>    
+</div> 
+</section>
+<script>
+    var colours = ["pink","green","yellow","blue","red","turquoise","white","chocolate","brown"]
+    var index = 0;
+    function changeColour(){
+        var randomIndex = Math.floor(Math.random()*colours.length);
+        var colour = colours[randomIndex]
+        document.querySelector('h2').style.color = colour
+    }
+    setInterval(function(){
+        changeColour();
+
+    },900)
+</script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed(".auto-type",{
+        strings:["playful","memorable","enjoyable"],
+        typeSpeed:150,
+        backSpeed:150,
+        loop:true
+    })
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.156.1/three.min.js" integrity="sha512-V9mpjsMwBSamMZSFBEbQL+ft1be7xPMU3t27EaGdDE9ctlBSTWJyAW+jKBPUkJYf7YyOWLXpLGwttdoiEv1hrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script> 
+</body>
+</html>
